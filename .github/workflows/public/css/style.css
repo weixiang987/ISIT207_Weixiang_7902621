@@ -1,0 +1,392 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Racing Sans One', cursive;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 30px;
+}
+
+/*..... WhatsApp Btn .....*/
+.whataApp-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    height: 75px;
+    width: 75px;
+    box-sizing: content-box;
+    border: 2px dotted #fe2000;
+    background-color: #0e59d0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+.whataApp-btn a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url(../images/wa-logo.png) no-repeat center;
+    background-size: 80%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+/*..... WhatsApp Btn .....*/
+#back-to-top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #808080;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    transition: opacity 0.2s ease-out;
+}
+#back-to-top.show{
+    opacity: 1;
+}
+.top-arrow .arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*map*/
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 460px;
+    width: 100%;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 460px;
+    width: 100%;
+}
+/*..... main-navigation ....*/
+.main-navigation{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+.main-navigation .nav-inner{
+    padding: 0 0 0 20px;
+    background: #ffffff;
+    box-shadow: 0px 1px 5px #bdcde3;
+}
+.main-navigation .logo{
+    width: 340px;
+    height: 34px;
+    margin: 20px 0;
+}
+.main-navigation .logo img{
+    width: 100%;
+}
+.main-navigation .nav-inner .navbar{
+    padding: 0;
+}
+.main-navigation ul li{
+    height: 80px;
+    margin-right: 40px;
+    padding: 15px 0px 15px 0px;
+}
+.main-navigation ul li a{
+   text-transform: uppercase;
+    color: #08182b;
+    letter-spacing: 0.025em;
+}
+.main-navigation ul li:hover{
+    border-bottom: 3px solid #fe0000;
+}
+/*..... main-navigation ....*/
+
+/*.... slide show ....*/
+/*..... indicators ....*/
+.carousel-indicators li{
+    width: 35px;
+    height: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: #9b9898;
+    opacity: 1;
+}
+.carousel-indicators .active{
+    background-color: #ff0000;
+}
+/*..... main-slide-show ....*/
+.main-slider{
+    height: 625px;
+}
+.main-slider-inner{
+    position: absolute;
+    top: 0;
+}
+.main-slider .carousel-indicators{
+    bottom: 10%;
+}
+.main-slider .carousel-caption{
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 36%;
+    padding-top: 0;
+    padding-bottom: 10px;
+    transform: translate(50%, -16%);
+    background: url("../images/tile.png") no-repeat transparent bottom;
+    background-size: contain;
+}
+.main-slider .carousel-item img{
+    height: 625px;
+    width: 100%;
+}
+/*..... main-slide-show .....*/
+
+/*.... featured tire ...*/
+.featuredTyres{
+    padding: 20px 0;
+    background: url("../images/tires_on_shelf.jpeg") no-repeat;
+    background-size: cover;
+}
+.featuredTyres .carousel-indicators{
+    bottom: -50px;
+}
+.featuredTyres .carousel-item .card{
+    background: transparent;
+}
+.featuredTyres .carousel-item .card .card-img-top{
+    min-height: 190px;
+}
+.featuredTyres .carousel-item .card-body{
+    padding: 0;
+    background: transparent;
+    color: #ffffff;
+    text-align: center;
+}
+.featuredTyres .carousel-item .card-body p{
+    font-size: 18px;
+}
+.featuredTyres .carousel-item .card-body p.tire-price{
+    font-size: 30px;
+}
+
+.featuredTyres .sale-tag{
+    position: absolute;
+}
+.featuredTyres .card-link a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+/*...... featured tire .....*/
+
+/*..... strength section .....*/
+.strength-section{
+    min-height: 385px;
+}
+.strength-section .strength-inner-img{
+    position: absolute;
+    left: 20px;
+    transform: translate(20px);
+    width: 228px;
+    height: 228px;
+    background: url("../images/promise-bg.png") no-repeat;
+    z-index: 2;
+}
+.strength-section .strength-inner-img img{
+    transform: translate(-20px,20px);
+    border-radius: 5px;
+}
+.strength-section .strength-inner-text{
+    position: absolute;
+    top: 43px;
+    right: 0;
+    height: 290px;
+    width: 333px;
+    padding: 40px;
+    background: #f1f3f6;
+    text-align: center;
+    z-index: 1;
+}
+.strength-section .strength-inner-text h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.strength-section .strength-inner-text p{
+    font-size: 16px;
+    line-height: 26px;
+}
+/*..... strength section .....*/
+
+/*.... Review section ....*/
+.review-section{
+    background: url("../images/reviewbg.png") no-repeat;
+}
+.review-section .carousel-indicators{
+    bottom: -50px;
+}
+.review-section .review-inner{
+    min-height: 345px;
+    padding: 30px;
+    background: url("../images/reviewbox.png") no-repeat;
+}
+.review-section .review-rating p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6f7884;
+}
+.review-section .review-rating:after{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 70px;
+    height: 10px;
+    background: url("../images/stars.png") no-repeat;
+    content: "";
+}
+.review-section .review-content p{
+    color: #000000;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: italic
+}
+/*.... Review section ....*/
+
+/*.... footer ....*/
+.footer .footer-column{
+    width: 50%;
+    height: 460px;
+}
+.footer .contact-us{
+    padding: 50px;
+    color: #ffffff;
+    background: #0059d0;
+}
+.footer ul.contact-detail{
+    margin: 35px 0 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 45px;
+}
+.footer ul.contact-detail li{
+    position: relative;
+    padding-left: 35px;
+    list-style-type: none;
+}
+.footer ul.contact-detail li:before{
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    content: '';
+    width: 15px;
+    height: 15px;
+}
+.footer ul.contact-detail li:nth-child(1):before{
+    background: url("../images/location.png") no-repeat;
+}
+.footer ul.contact-detail li:nth-child(2):before{
+    background: url("../images/clock.png") no-repeat;
+}
+.footer ul.contact-detail li:nth-child(3):before{
+    background: url("../images/chat.png") no-repeat;
+}
+.footer ul.contact-detail li:nth-child(4):before{
+    background: url("../images/printer.png") no-repeat;
+}
+/*.... footer ....*/
+
+/*........ copy right section ........*/
+.copright-section{
+    padding: 12px 0px 0;
+    font-size: 13px;
+    border-top: 1px solid #dcdcdc;
+    line-height: 10px;
+    clear: both;
+}
+/*........ copy right section ........*/
+
+/*...... About Us Page ............*/
+/*.... Banner ....*/
+.innerPage-banner{
+    position: relative;
+    height: 250px;
+    background: url("../images/aboutus-banner.jpeg") no-repeat;
+}
+.innerPage-banner .banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 8%);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.innerPage-banner .banner-text h1{
+    letter-spacing: 2px;
+}
+.innerPage-banner .banner-text h1:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 375px;
+    height: 40px;
+    transform: translate(-50%, 0);
+    background: url("../images/sub-tile.png") no-repeat;
+    content: '';
+}
+.innerPage-banner.innerPage-map{
+    height: 460px;
+    background: none;
+}
+/*.... Banner ....*/
+
+/*.... Service Page ....*/
+.service-section .service-tile{
+    width: 50%;
+    height: 475px;
+    float: left;
+}
+.service-section .service-content{
+    padding: 7% 5%;
+    line-height: 28px;
+}
+.service-section .service-tile img{
+    height: 100%;
+}
+/*.... Service Page ....*/
+/*...... About Us Page ............*/
+
+/*....... Contact Us Page .....*/
+.breadcrumb-section{
+    height: 56px;
+    margin: 0;
+    padding-top: 14px;
+    color: #08182b;
+    background-color: #eef1f4;
+    font-size: 16px;
+    line-height: 28px;
+}
+.footer .form-section{
+    padding: 3% 6%;
+}
+.footer .form-section button{
+    min-width: 200px;
+    padding: 15px 25px;
+    font-size: 18px;
+}
